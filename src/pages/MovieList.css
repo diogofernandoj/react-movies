@@ -1,0 +1,66 @@
+.movie-list-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.movie-list-container h2 {
+  text-align: center;
+  margin: 3rem 0;
+}
+.movie-list-container p {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  font-size: 500;
+}
+.movie-list-container table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #111;
+  border-collapse: collapse;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.movie-list-container table thead {
+  background-color: #ff0;
+  line-height: 3rem;
+}
+.movie-list-container table thead th {
+  color: #111;
+}
+.movie-list-container table tr {
+  color: #666;
+  font-weight: 500;
+  border-bottom: 2px solid #222;
+}
+.movie-list-container table tr td {
+  height: 4rem;
+}
+.movie-list-container table tr td:nth-child(1) {
+  padding-left: 1rem;
+}
+.movie-list-container table tr td:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.movie-list-container table tr i {
+  color: #333;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.movie-list-container table tr i:hover {
+  color: #ff0;
+}
+
+@media screen and (max-width: 600px) {
+  .movie-list-container table tr td:nth-child(1) {
+    font-size: 0.8rem;
+  }
+  .movie-list-container table tr i {
+    font-size: 1rem;
+  }
+}

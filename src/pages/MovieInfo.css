@@ -1,0 +1,43 @@
+.movie-info-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.movie-info-container h2 {
+  color: #fff;
+  text-align: center;
+  margin: 2rem 0;
+}
+.movie-info-container img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.movie-info-container p {
+  font-weight: 500;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+.movie-info-container .movie-info-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.movie-info-buttons .save-to-list {
+  border: none;
+  background: none;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.movie-info-buttons .trailer {
+  text-decoration: none;
+  background-color: #ff0;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}

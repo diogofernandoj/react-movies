@@ -1,0 +1,93 @@
+.navbar-container {
+  background-color: #070707;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+.navbar {
+  height: 100%;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.navbar .profile span {
+  color: #fff;
+  font-weight: 500;
+}
+.navbar .profile .icon-profile {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #ffff55;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar a {
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbar .logo {
+  color: #ff0;
+  font-size: 1.4rem;
+}
+.navbar .logo span {
+  color: #fff;
+}
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar .menu .list-button {
+  color: #aaa;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid #aaa;
+  border-radius: 0.4rem;
+  transition: 0.3s ease;
+  font-size: 0.7rem;
+}
+.navbar .menu .list-button:hover {
+  color: #fff;
+  border-color: #ff0;
+}
+.navbar .menu .signout-button {
+  background: none;
+  border: none;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.navbar .menu i {
+  font-size: 1rem;
+}
+.navbar .menu .signout-button:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .profile span {
+    display: none;
+  }
+  .navbar .menu .list-button {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.8rem;
+  }
+  .navbar .menu span {
+    display: none;
+  }
+}
