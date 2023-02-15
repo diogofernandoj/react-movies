@@ -10,6 +10,8 @@ import Home from "../pages/Home";
 import MovieInfo from "../pages/MovieInfo";
 import MovieList from "../pages/MovieList";
 
+import NotFound from "../pages/NotFound";
+
 import { PrivateRoutes } from "./privateRoutes";
 
 export default function RoutesApp() {
@@ -25,6 +27,8 @@ export default function RoutesApp() {
         <Route path="/movie/:id" element={<MovieInfo />} />
         <Route path="/list" element={<MovieList />} />
       </Route>
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
