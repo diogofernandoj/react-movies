@@ -78,7 +78,15 @@ export default function MovieInfo() {
     <div className="movie-info-container">
       <h2>{movie.title}</h2>
       <img src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="Poster do filme" />
-      <p>{movie.overview}</p>
+      <div className="genres">
+        {movie.genres.map((genre) => (
+          <small key={genre.id}>{genre.name} </small>
+        ))}
+      </div>
+      <span className="rating">
+        | Avaliação: {movie.vote_average.toFixed(1)} <i className="fa-solid fa-star"></i>
+      </span>
+      <p className="overview">{movie.overview}</p>
       <div className="movie-info-buttons">
         <button className="save-to-list" onClick={handleListButton}>
           {movieOnList ? "Salvo " : "Salvar "}

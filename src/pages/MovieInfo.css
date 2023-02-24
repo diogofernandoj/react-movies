@@ -13,10 +13,30 @@
   width: 100%;
   margin-bottom: 1rem;
 }
-.movie-info-container p {
+.movie-info-container .genres {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.movie-info-container .rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.movie-info-container .rating i {
+  color: #ff0;
+  margin-bottom: 0.1rem;
+}
+.movie-info-container .overview {
   font-weight: 500;
   color: #aaa;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 .movie-info-container .movie-info-buttons {
   display: flex;
